@@ -30,21 +30,21 @@ export default function App() {
       <Routes>
       
         <Route path="/" element={<Home />} />
-        <Route path="/forums" element={<Forums />} ></Route>
+        <Route path="/forums" element={<Forums />} />
         <Route path="/join-us" element={<JoinUs />} />
         <Route path="/why-us" element={<WhyUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
 
-        <Route path="/bureaucrat-forum" element={<Bureaucrat />}></Route>
-        <Route path="/celebrity-forum" element={<Celebrity />}></Route>
-        <Route path="/entrepreneur-forum" element={<Entrepreneur />}></Route>
-        <Route path="/global-embassy-forum" element={<GlobalEmbassy />}></Route>
-        <Route path="/international-ecinomic-forum" element={<InternationalEcinomic />}></Route>
-        <Route path="/law-forum" element={<Law />}></Route>
-        <Route path="/medico-forum" element={<Medico />}></Route>
-        <Route path="/political-forum" element={<Political />}></Route>
-        <Route path="/sports-forum" element={<Sports />}></Route>
-        <Route path="/youth-forum" element={<Youth />}></Route>
+        <Route path="/bureaucrat-forum" element={<Bureaucrat />} />
+        <Route path="/celebrity-forum" element={<Celebrity />} />
+        <Route path="/entrepreneur-forum" element={<Entrepreneur />} />
+        <Route path="/global-embassy-forum" element={<GlobalEmbassy />} />
+        <Route path="/international-ecinomic-forum" element={<InternationalEcinomic />} />
+        <Route path="/law-forum" element={<Law />} />
+        <Route path="/medico-forum" element={<Medico />} />
+        <Route path="/political-forum" element={<Political />} />
+        <Route path="/sports-forum" element={<Sports />} />
+        <Route path="/youth-forum" element={<Youth />} />
 
       </Routes>
       <Footer />
