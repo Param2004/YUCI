@@ -23,7 +23,7 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Bureaucrat Forum', description: 'Get a better understanding of your traffic', href: '/bureaucrat-forum', icon: ChartPieIcon },
+  { name: 'Bureaucrat Forum', description: 'Get a better understanding of your traffic', href: '/forums/bureaucrat-forum', icon: ChartPieIcon },
   { name: 'Celebrity Forum', description: 'Speak directly to your customers', href: '/forums/celebrity-forum', icon: CursorArrowRaysIcon },
   { name: 'Entrepreneur Forum', description: 'Get a better understanding of your traffic', href: '/forums/entrepreneur-forum', icon: ChartPieIcon },
   { name: 'Global Embassy Forum', description: 'Get a better understanding of your traffic', href: '/forums/global-embassy-forum', icon: ChartPieIcon },
