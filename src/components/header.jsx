@@ -23,16 +23,17 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Bureaucrat Forum', description: 'Get a better understanding of your traffic', href: '/bureaucrat-forum', icon: ChartPieIcon },
-  { name: 'Celebrity Forum', description: 'Speak directly to your customers', href: '/celebrity-forum', icon: CursorArrowRaysIcon },
-  { name: 'Entrepreneur Forum', description: 'Get a better understanding of your traffic', href: '/entrepreneur-forum', icon: ChartPieIcon },
-  { name: 'Global Embassy Forum', description: 'Get a better understanding of your traffic', href: '/global-embassy-forum', icon: ChartPieIcon },
-  { name: 'International Economic Forum', description: 'Your customers data will be safe and secure', href: '/international-economic-forum', icon: FingerPrintIcon },
-  { name: 'Law Forum', description: 'Get a better understanding of your traffic', href: '/law-forum', icon: ChartPieIcon },
-  { name: 'Medico Forum', description: 'Connect with third-party tools', href: '/medico-forum', icon: SquaresPlusIcon },
-  { name: 'Political Forum', description: 'Build strategic funnels that will convert', href: '/political-forum', icon: ArrowPathIcon },
-  { name: 'Sports Forum', description: 'Build strategic funnels that will convert', href: '/sports-forum', icon: ArrowPathIcon },
-  { name: 'Youth Forum', description: 'Build strategic funnels that will convert', href: '/youth-forum', icon: ArrowPathIcon },
+  { name: 'Bureaucrat Forum', description: 'Get a better understanding of your traffic', href: '/forums/bureaucrat-forum', icon: ChartPieIcon },
+  { name: 'Celebrity Forum', description: 'Speak directly to your customers', href: '/forums/celebrity-forum', icon: CursorArrowRaysIcon },
+  { name: 'Entrepreneur Forum', description: 'Get a better understanding of your traffic', href: '/forums/entrepreneur-forum', icon: ChartPieIcon },
+  { name: 'Global Embassy Forum', description: 'Get a better understanding of your traffic', href: '/forums/global-embassy-forum', icon: ChartPieIcon },
+  { name: 'International Economic Forum', description: 'Your customers data will be safe and secure', 
+    href: '/forums/international-forum', icon: FingerPrintIcon },
+  { name: 'Law Forum', description: 'Get a better understanding of your traffic', href: '/forums/law-forum', icon: ChartPieIcon },
+  { name: 'Medico Forum', description: 'Connect with third-party tools', href: '/forums/medico-forum', icon: SquaresPlusIcon },
+  { name: 'Political Forum', description: 'Build strategic funnels that will convert', href: '/forums/political-forum', icon: ArrowPathIcon },
+  { name: 'Sports Forum', description: 'Build strategic funnels that will convert', href: '/forums/sports-forum', icon: ArrowPathIcon },
+  { name: 'Youth Forum', description: 'Build strategic funnels that will convert', href: '/forums/youth-forum', icon: ArrowPathIcon },
 ]
 
 const callsToAction = [
@@ -88,10 +89,10 @@ export default function Header() {
                       <item.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" />
                     </div> */}
                     <div className="flex-auto">
-                      <a href={item.href} className="block font-semibold text-gray-900 hover:text-red-600">
+                      <Link to={item.href} className="block font-semibold text-gray-900 hover:text-red-600">
                         {item.name}
                         <span className="absolute inset-0" />
-                      </a>
+                      </Link>
                       {/* <p className="mt-1 text-gray-600">{item.description}</p> */}
                     </div>
                   </div>
@@ -182,14 +183,14 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to='/' className="-m-1.5 p-1.5">
               <span className="sr-only">YUCI</span>
               <img
                 alt=""
                 src="/logo.jpg"
                 className="h-14 w-auto"
               />
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
