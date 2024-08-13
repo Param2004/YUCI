@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+
 
 export default function Forums(){
     return (
@@ -6,7 +6,6 @@ export default function Forums(){
         <div>
             Forums
         </div>
-        <Outlet />
         </>
     )
 }
