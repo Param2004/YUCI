@@ -48,7 +48,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link to='/' className=" -m-1.5 p-1.5">
             <span className="sr-only">YUCI</span>
-            <img alt="" src="src/assets/logo.jpg" className=" inline h-16 w-auto" />
+            <img alt="" src="/logo.jpg" className=" inline h-16 w-auto" />
             {/* <div className='inline p-2'>
             <p className=' text-lg font-semibold text-blue-950'>Youth United for Change India</p>
             <p className=' text-xs'>World's First and Largest Platform of Professionals</p>
