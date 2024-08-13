@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import {
   Dialog,
   DialogPanel,
@@ -217,14 +217,16 @@ export default function Header() {
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
+                    {products.map((item) => (
                       <DisclosureButton
                         key={item.name}
-                        as="a"
-                        href={item.href}
                         className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                       >
+                      <button onClick={() => setMobileMenuOpen(false)}>
+                      <Link to={item.href}>
                         {item.name}
+                      </Link>
+                      </button>
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
