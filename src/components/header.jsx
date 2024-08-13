@@ -186,7 +186,7 @@ export default function Header() {
               <span className="sr-only">YUCI</span>
               <img
                 alt=""
-                src="/src/assets/logo.jpg"
+                src="/logo.jpg"
                 className="h-14 w-auto"
               />
             </a>

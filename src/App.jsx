@@ -6,16 +6,16 @@ import Forums from './pages/forums'
 import JoinUs from './pages/joinUs'
 import WhyUs from './pages/whyUs'
 import ContactUs from './pages/contactUs'
-import Bureaucrat from './pages/bureaucrat'
-import Celebrity from './pages/celebrity'
-import Entrepreneur from './pages/entrepreneur'
-import GlobalEmbassy from './pages/globalEmbassy'
-import InternationalEcinomic from './pages/internationalEconomic'
-import Law from './pages/law'
-import Medico from './pages/medico'
-import Political from './pages/political'
-import Sports from './pages/sports'
-import Youth from './pages/youth'
+import Bureaucrat from './pages/forums/bureaucrat'
+import Celebrity from './pages/forums/celebrity'
+import Entrepreneur from './pages/forums/entrepreneur'
+import GlobalEmbassy from './pages/forums/globalEmbassy'
+import InternationalEcinomic from './pages/forums/internationalEconomic'
+import Law from './pages/forums/law'
+import Medico from './pages/forums/medico'
+import Political from './pages/forums/political'
+import Sports from './pages/forums/sports'
+import Youth from './pages/forums/youth'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './App.css'
 
@@ -28,24 +28,22 @@ export default function App() {
     <Router>
       <Header />
       <Routes>
-      
         <Route path="/" element={<Home />} />
-        <Route path="/forums" element={<Forums />} ></Route>
+        <Route path="/forums" element={<Forums />} >
+          <Route path="bureaucrat-forum" element={<Bureaucrat />} />
+          <Route path="celebrity-forum" element={<Celebrity />} />
+          <Route path="entrepreneur-forum" element={<Entrepreneur />} />
+          <Route path="global-embassy-forum" element={<GlobalEmbassy />} />
+          <Route path="international-economic-forum" element={<InternationalEcinomic />} />
+          <Route path="law-forum" element={<Law />} />
+          <Route path="medico-forum" element={<Medico />} />
+          <Route path="political-forum" element={<Political />} />
+          <Route path="sports-forum" element={<Sports />} />
+          <Route path="youth-forum" element={<Youth />} />
+        </Route>
         <Route path="/join-us" element={<JoinUs />} />
         <Route path="/why-us" element={<WhyUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
-
-        <Route path="/forums/bureaucrat-forum" element={<Bureaucrat />}></Route>
-        <Route path="/forums/celebrity-forum" element={<Celebrity />}></Route>
-        <Route path="/forums/entrepreneur-forum" element={<Entrepreneur />}></Route>
-        <Route path="/forums/global-embassy-forum" element={<GlobalEmbassy />}></Route>
-        <Route path="/forums/international-ecinomic-forum" element={<InternationalEcinomic />}></Route>
-        <Route path="/forums/law-forum" element={<Law />}></Route>
-        <Route path="/forums/medico-forum" element={<Medico />}></Route>
-        <Route path="/forums/political-forum" element={<Political />}></Route>
-        <Route path="/forums/sports-forum" element={<Sports />}></Route>
-        <Route path="/forums/youth-forum" element={<Youth />}></Route>
-
       </Routes>
       <Footer />
     </Router>
