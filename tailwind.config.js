@@ -7,6 +7,9 @@ export default {
   theme: {
     extend: {},
   },
+  // build: {
+  //   sourcemap: false,
+  // },
   variants: {
    display: ['responsive', 'group-hover', 'group-focus'],
   },

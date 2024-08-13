@@ -1,4 +1,3 @@
-'use client'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
@@ -7,10 +6,10 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Popover,
-  PopoverButton,
+  // Popover,
+  // PopoverButton,
   PopoverGroup,
-  PopoverPanel,
+  // PopoverPanel,
 } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -22,19 +21,18 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import Home from '../pages/home'
 
 const products = [
   { name: 'Bureaucrat Forum', description: 'Get a better understanding of your traffic', href: '/forums/bureaucrat-forum', icon: ChartPieIcon },
-  { name: 'Celebrity Forum', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Entrepreneur Forum', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Global Embassy Forum', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'International Economic Forum', description: 'Your customers data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Law Forum', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Medico Forum', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Political Forum', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Sports Forum', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Youth Forum', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Celebrity Forum', description: 'Speak directly to your customers', href: '/forums/celebrity-forum', icon: CursorArrowRaysIcon },
+  { name: 'Entrepreneur Forum', description: 'Get a better understanding of your traffic', href: '/forums/entrepreneur-forum', icon: ChartPieIcon },
+  { name: 'Global Embassy Forum', description: 'Get a better understanding of your traffic', href: '/forums/global-embassy-forum', icon: ChartPieIcon },
+  { name: 'International Economic Forum', description: 'Your customers data will be safe and secure', href: '/forums/international-economic-forum', icon: FingerPrintIcon },
+  { name: 'Law Forum', description: 'Get a better understanding of your traffic', href: '/forums/law-forum', icon: ChartPieIcon },
+  { name: 'Medico Forum', description: 'Connect with third-party tools', href: '/forums/medical-forum', icon: SquaresPlusIcon },
+  { name: 'Political Forum', description: 'Build strategic funnels that will convert', href: '/forums/political-forum', icon: ArrowPathIcon },
+  { name: 'Sports Forum', description: 'Build strategic funnels that will convert', href: '/forums/sports-forum', icon: ArrowPathIcon },
+  { name: 'Youth Forum', description: 'Build strategic funnels that will convert', href: '/forums/youth-forum', icon: ArrowPathIcon },
 ]
 
 const callsToAction = [
