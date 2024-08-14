@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {
   Dialog,
   DialogPanel,
@@ -183,7 +183,7 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link to='/' className="-m-1.5 p-1.5">
+            <Link onClick={() => setMobileMenuOpen(false)} to='/' className="-m-1.5 p-1.5">
               <span className="sr-only">YUCI</span>
               <img
                 alt=""
@@ -205,13 +205,14 @@ export default function Header() {
               <div className="space-y-2 py-6">
                 <Link
                   to='/'
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600"
                 >
                   Home
                 </Link>
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600">
-                    <Link to='/forums'>
+                    <Link onClick={() => setMobileMenuOpen(false)} to='/forums'>
                       Forums
                     </Link>
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
@@ -223,7 +224,10 @@ export default function Header() {
                         className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                       >
                       <button onClick={() => setMobileMenuOpen(false)}>
-                      <Link to={item.href}>
+                      <Link 
+                        onClick={() => setMobileMenuOpen(false)}
+                        to={item.href}
+                      >
                         {item.name}
                       </Link>
                       </button>
@@ -232,12 +236,14 @@ export default function Header() {
                   </DisclosurePanel>
                 </Disclosure>
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   to='why-us'
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600"
                 >
                   Why Us
                 </Link>
                 <Link
+                  onClick={() => setMobileMenuOpen(false)}
                   to='contact-us'
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600"
                 >
@@ -247,6 +253,7 @@ export default function Header() {
               <div className="py-6">
                 <Link
                   to='join-us'
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600"
                 >
                   Join Us
