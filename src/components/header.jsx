@@ -49,7 +49,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link to='/' className=" -m-1.5 p-1.5">
             <span className="sr-only">YUCI</span>
-            <img alt="" src="/logo.jpg" className=" inline h-16 w-auto" />
+            <img alt="" src="/logo.jpg" className=" inline h-12 w-auto transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300" />
             {/* <div className='inline p-2'>
             <p className=' text-lg font-semibold text-blue-950'>Youth United for Change India</p>
             <p className=' text-xs'>World's First and Largest Platform of Professionals</p>
@@ -68,12 +68,12 @@ export default function Header() {
         </div>
         
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link to='/' className="text-sm font-semibold leading-6 text-gray-900 active:text-red-600 hover:text-red-600"> 
+          <Link to='/' className="text-sm font-semibold leading-6 text-gray-900 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300"> 
             Home 
           </Link>
 
           <div className="relative group">
-            <button className="text-sm font-semibold leading-6 text-gray-900 active:text-red-600 hover:text-red-600">
+            <button className="text-sm font-semibold leading-6 text-gray-900 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                 <Link to='/forums'>Forums<ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none inline text-gray-400" /></Link>
             </button>
             <div
@@ -89,7 +89,8 @@ export default function Header() {
                       <item.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" />
                     </div> */}
                     <div className="flex-auto">
-                      <Link to={item.href} className="block font-semibold text-gray-900 hover:text-red-600">
+                      <Link to={item.href} className="block font-semibold text-gray-900 hover:text-red-600
+                      transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                         {item.name}
                         <span className="absolute inset-0" />
                       </Link>
@@ -161,10 +162,10 @@ export default function Header() {
           </Popover> */}
 
           
-          <Link to='/why-us' className="text-sm font-semibold leading-6 text-gray-900 active:text-red-600 hover:text-red-600">
+          <Link to='/why-us' className="text-sm font-semibold leading-6 text-gray-900 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
             Why Us
           </Link>
-          <Link to='/contact-us' className="text-sm font-semibold leading-6 text-gray-900 active:text-red-600 hover:text-red-600">
+          <Link to='/contact-us' className="text-sm font-semibold leading-6 text-gray-900 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
             Contact Us
           </Link>
         </PopoverGroup>
@@ -174,7 +175,7 @@ export default function Header() {
            border-2
             px-2 py-1 rounded
           hover:bg-white
-            hover:font-extrabold">
+            hover:font-extrabold transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
             Join Us <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
@@ -206,12 +207,12 @@ export default function Header() {
                 <Link
                   to='/'
                   onClick={() => setMobileMenuOpen(false)}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300"
                 >
                   Home
                 </Link>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                     <Link onClick={() => setMobileMenuOpen(false)} to='/forums'>
                       Forums
                     </Link>
@@ -238,14 +239,14 @@ export default function Header() {
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
                   to='why-us'
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300"
                 >
                   Why Us
                 </Link>
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
                   to='contact-us'
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300"
                 >
                   Contact Us
                 </Link>
@@ -254,7 +255,7 @@ export default function Header() {
                 <Link
                   to='join-us'
                   onClick={() => setMobileMenuOpen(false)}
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 active:text-red-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300"
                 >
                   Join Us
                 </Link>

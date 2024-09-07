@@ -99,11 +99,11 @@ const navigation = {
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text font-semibold text-red-700 tracking-wider uppercase">Solutions</h3>
+                  <h3 className="text font-semibold underline text-red-700 tracking-wider uppercase">Solutions</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.solutions.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-700 hover:text-red-600">
+                        <a href={item.href} className="text-base text-gray-700 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                           {item.name}
                         </a>
                       </li>
@@ -111,11 +111,11 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-12 md:mt-0">
-                  <h3 className="text font-semibold text-red-700 tracking-wider uppercase">Support</h3>
+                  <h3 className="text font-semibold underline text-red-700 tracking-wider uppercase">Support</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.support.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-700 hover:text-red-600">
+                        <a href={item.href} className="text-base text-gray-700 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                           {item.name}
                         </a>
                       </li>
@@ -125,11 +125,11 @@ const navigation = {
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
-                  <h3 className="text font-semibold text-red-700 tracking-wider uppercase">Company</h3>
+                  <h3 className="text font-semibold underline text-red-700 tracking-wider uppercase">Company</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.company.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-700 hover:text-red-600">
+                        <a href={item.href} className="text-base text-gray-700 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                           {item.name}
                         </a>
                       </li>
@@ -137,11 +137,11 @@ const navigation = {
                   </ul>
                 </div>
                 <div className="mt-12 md:mt-0">
-                  <h3 className="text font-semibold text-red-700 tracking-wider uppercase">Legal</h3>
+                  <h3 className="text font-semibold underline text-red-700 tracking-wider uppercase ">Legal</h3>
                   <ul role="list" className="mt-4 space-y-4">
                     {navigation.legal.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-700 hover:text-red-600">
+                        <a href={item.href} className="text-base text-gray-700 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                           {item.name}
                         </a>
                       </li>
@@ -173,7 +173,8 @@ const navigation = {
                 <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                   <button
                     type="submit"
-                    className="w-full bg-red-600 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:text-red-600 ring-2 ring-red-600 hover:bg-white focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                    className="w-full bg-red-600 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:text-red-600 ring-2 ring-red-600 hover:bg-white focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+                    transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300"
                   >
                     Subscribe
                   </button>
@@ -184,7 +185,7 @@ const navigation = {
           <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
             <div className="flex space-x-6 md:order-2">
               {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-600 hover:text-red-600">
+                <a key={item.name} href={item.href} className="text-gray-600 hover:text-red-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
